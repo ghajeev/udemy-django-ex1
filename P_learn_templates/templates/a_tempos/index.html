@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+{% extends "a_tempos/base.html" %}
+  {% block body_block %}
+    {% load my_extras %}
+    <h1>WELCOME TO INDEX GAANDU!!</h1>
+    <h2>This is the index page showing. Everything else is inherited!</h2>
+    <br>
+    <!-- You can use python methods on your filters e.g. here we're using upper -->
+    <!-- <h1>{{ text|upper }}</h1> -->
+    <h1>{{ text| kaato:'bitches' }}</h1>
+    <br>
+    <h1>{{ number|add:99 }}</h1>
+  {% endblock %}
